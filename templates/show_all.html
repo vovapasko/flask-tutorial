@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All data</title>
+</head>
+<body>
+<p><strong>Model and color</strong></p>
+
+<table border="1">
+    {%for value in model_color%}
+    <tr>
+        <th>{{value}}</th>
+        <td>{{model_color[value]}}</td>
+    </tr>
+    {%endfor%}
+</table>
+
+<p><strong>Model and owner</strong></p>
+<table border="1">
+    {%for value in model_owner%}
+    <tr>
+        <th>{{value}}</th>
+        <td>{{model_owner[value]}}</td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

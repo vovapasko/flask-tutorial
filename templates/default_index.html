@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greetings</title>
+</head>
+<body>
+    <h1>Welcome! Here are the rules how to use this service:</h1>
+    <p>There are some dictionaries: </p>
+    <p><strong>Model and color</strong></p>
+    {%for value in model_color%}
+    <p>{{value}}: {{model_color[value]}}</p>
+    {%endfor%}
+    <p><strong>Model and owner</strong></p>
+    {%for value in model_owner%}
+    <p>{{value}}: {{model_owner[value]}}</p>
+    {%endfor%}
+
+    <p>Set the query /all and I will display all these dicts in the table</p>
+    <p>Set the query to /model_color or to /model_owner and I will show you the form to edit the entities</p>
+
+
+</body>
+</html>

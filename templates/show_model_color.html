@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model and color</title>
+</head>
+<body>
+<form action="/handle_model_color" method="post">
+    {%for key in model_color%}
+    <input type="text" value={{key}} name={{key}}>
+    <input type="text" value="{{model_color[key]}}" name="{{model_color[key]}}">
+    <br>
+    {%endfor%}
+    <input type="submit" value="Send form">
+</form>
+</body>
+</html>
